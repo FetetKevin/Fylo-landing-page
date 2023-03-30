@@ -3,10 +3,20 @@ import securityImg from "../assets/images/icon-security.svg";
 import realtimeImg from "../assets/images/icon-collaboration.svg";
 import storeImg from "../assets/images/icon-any-file.svg";
 
-export default function Services() {
+export default function Services(props) {
     return (
         <section className="services">
-            <article className="article-1">
+            <article
+                className={
+                    (props.windowHeight >= 280 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 357 &&
+                        props.windowWidth <= 810 &&
+                        props.windowWidth > 450) ||
+                    (props.windowHeight >= 200 && props.windowWidth <= 450)
+                        ? "article-1 animate"
+                        : "article-1"
+                }
+            >
                 <img src={accessImg} alt="" />
                 <h3>Access your files, anywhere</h3>
                 <p>
@@ -15,7 +25,17 @@ export default function Services() {
                 </p>
             </article>
 
-            <article className="article-2">
+            <article
+                className={
+                    (props.windowHeight >= 280 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 357 &&
+                        props.windowWidth <= 810 &&
+                        props.windowWidth > 450) ||
+                    (props.windowHeight >= 527 && props.windowWidth <= 450)
+                        ? "article-2 animate"
+                        : "article-2"
+                }
+            >
                 <img src={securityImg} alt="" />
                 <h3>Security you can trust</h3>
                 <p>
@@ -25,7 +45,17 @@ export default function Services() {
                 </p>
             </article>
 
-            <article className="article-3">
+            <article
+                className={
+                    (props.windowHeight >= 634 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 714 &&
+                        props.windowWidth <= 810 &&
+                        props.windowWidth > 450) ||
+                    (props.windowHeight >= 855 && props.windowWidth <= 450)
+                        ? "article-3 animate"
+                        : "article-3"
+                }
+            >
                 <img src={realtimeImg} alt="" />
                 <h3>Real-time collaboration</h3>
                 <p>
@@ -35,7 +65,17 @@ export default function Services() {
                 </p>
             </article>
 
-            <article className="article-4">
+            <article
+                className={
+                    (props.windowHeight >= 634 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 714 &&
+                        props.windowWidth <= 810 &&
+                        props.windowWidth > 450) ||
+                    (props.windowHeight >= 1189 && props.windowWidth <= 450)
+                        ? "article-4 animate"
+                        : "article-4"
+                }
+            >
                 <img src={storeImg} alt="" />
                 <h3>Store any type of file</h3>
                 <p>

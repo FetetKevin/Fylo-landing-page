@@ -1,6 +1,6 @@
 import heroImg from "../assets/images/illustration-intro.png";
 
-export default function Hero() {
+export default function Hero(props) {
     return (
         <section className="hero">
             <img src={heroImg} alt="" />
@@ -10,7 +10,20 @@ export default function Hero() {
                 location. Access them wherever you need, share and collaborate
                 with friends family, and co-workers
             </p>
-            <a href="#">Get Started</a>
+            <a
+                className={
+                    (props.windowHeight > 95 && props.windowWidth > 810) ||
+                    (props.windowHeight > 240 &&
+                        props.windowWidth <= 810 &&
+                        props.windowWidth > 450) ||
+                    props.windowWidth <= 450
+                        ? "btn-get-started animate"
+                        : "btn-get-started"
+                }
+                href="#"
+            >
+                Get Started
+            </a>
         </section>
     );
 }

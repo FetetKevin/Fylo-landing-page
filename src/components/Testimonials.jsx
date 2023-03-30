@@ -4,12 +4,45 @@ import profile_1 from "../assets/images/profile-1.jpg";
 import profile_2 from "../assets/images/profile-2.jpg";
 import profile_3 from "../assets/images/profile-3.jpg";
 
-export default function Testimonials() {
+export default function Testimonials(props) {
+    // className={
+    //     (props.windowHeight >= 1326 && props.windowWidth > 810) ||
+    //     (props.windowHeight >= 1326 &&
+    //         props.windowWidth <= 810 &&
+    //         props.windowWidth > 450) ||
+    //     (props.windowHeight >= 1555 && props.windowWidth <= 450)
+    //         ? "animate"
+    //         : ""
+    // }
     return (
         <section className="testimonials">
             <div className="top">
-                <img src={productiveImg} alt="" />
-                <div className="block-right">
+                <img
+                    className={
+                        (props.windowHeight >= 1252 &&
+                            props.windowWidth > 810) ||
+                        (props.windowHeight >= 1368 &&
+                            props.windowWidth <= 810 &&
+                            props.windowWidth > 450) ||
+                        (props.windowHeight >= 1555 && props.windowWidth <= 450)
+                            ? "productive animate"
+                            : "productive"
+                    }
+                    src={productiveImg}
+                    alt=""
+                />
+                <div
+                    className={
+                        (props.windowHeight >= 1252 &&
+                            props.windowWidth > 810) ||
+                        (props.windowHeight >= 1632 &&
+                            props.windowWidth <= 810 &&
+                            props.windowWidth > 450) ||
+                        (props.windowHeight >= 1776 && props.windowWidth <= 450)
+                            ? "block-right animate"
+                            : "block-right"
+                    }
+                >
                     <h2>Stay productive, wherever your are.</h2>
                     <p>
                         Never let location be an issue when accessing your
@@ -21,14 +54,25 @@ export default function Testimonials() {
                         and colleagues for live collaboration. No email
                         attachments required.
                     </p>
-                    <h4 class="link">
+                    <h4 className="link">
                         <a href="#">See how Fylo works</a>
                     </h4>
                 </div>
             </div>
 
             <div className="comments">
-                <div className="comment">
+                <div
+                    className={
+                        (props.windowHeight >= 1905 &&
+                            props.windowWidth > 810) ||
+                        (props.windowHeight >= 2063 &&
+                            props.windowWidth <= 810 &&
+                            props.windowWidth > 450) ||
+                        (props.windowHeight >= 2221 && props.windowWidth <= 450)
+                            ? "comment comment-1 animate"
+                            : "comment comment-1"
+                    }
+                >
                     <p>
                         Fylo has improved our team productivity by an order of
                         magnitude. Since making the switch our team has become a
@@ -42,7 +86,18 @@ export default function Testimonials() {
                         </div>
                     </div>
                 </div>
-                <div className="comment">
+                <div
+                    className={
+                        (props.windowHeight >= 1905 &&
+                            props.windowWidth > 810) ||
+                        (props.windowHeight >= 2303 &&
+                            props.windowWidth <= 810 &&
+                            props.windowWidth > 450) ||
+                        (props.windowHeight >= 2443 && props.windowWidth <= 450)
+                            ? "comment comment-2 animate"
+                            : "comment comment-2"
+                    }
+                >
                     <p>
                         Fylo has improved our team productivity by an order of
                         magnitude. Since making the switch our team has become a
@@ -56,7 +111,18 @@ export default function Testimonials() {
                         </div>
                     </div>
                 </div>
-                <div className="comment">
+                <div
+                    className={
+                        (props.windowHeight >= 1905 &&
+                            props.windowWidth > 810) ||
+                        (props.windowHeight >= 2535 &&
+                            props.windowWidth <= 810 &&
+                            props.windowWidth > 450) ||
+                        (props.windowHeight >= 2678 && props.windowWidth <= 450)
+                            ? "comment comment-3 animate"
+                            : "comment comment-3"
+                    }
+                >
                     <p>
                         Fylo has improved our team productivity by an order of
                         magnitude. Since making the switch our team has become a

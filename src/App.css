@@ -18,6 +18,52 @@
     --font-opensans: "Open-sans", sans-serif;
 }
 
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -94,6 +140,7 @@ nav a {
     margin-top: 50px;
     font-family: var(--font-raleway);
     text-align: center;
+    animation: fadeIn 1s ease-in;
 }
 
 .hero p {
@@ -105,9 +152,11 @@ nav a {
     font-weight: 400;
     text-align: center;
     line-height: 28px;
+    animation: fadeIn 1s ease-in;
 }
 
-.hero a {
+.hero .btn-get-started {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +170,18 @@ nav a {
     font-size: 1rem;
     font-family: var(--font-raleway);
     font-weight: 700;
+    transition: all 0.3s;
+}
+
+.hero .btn-get-started:hover {
+    transform: scale(1.1);
+    font-size: 1.1rem;
+    background-color: #3dabb5;
+}
+
+.hero .btn-get-started.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in;
 }
 
 @media screen and (max-width: 810px) {
@@ -169,31 +230,55 @@ nav a {
 }
 
 .article-1 {
+    opacity: 0;
     grid-column: 1/2;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.article-1.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInLeft 1s linear;
 }
 
 .article-2 {
+    opacity: 0;
     grid-column: 2/3;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+.article-2.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInRight 1s linear;
+}
+
 .article-3 {
+    opacity: 0;
     grid-column: 1/2;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+.article-3.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInLeft 1s linear;
+}
+
 .article-4 {
+    opacity: 0;
     grid-column: 2/3;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.article-4.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInRight 1s linear;
 }
 
 article img {
@@ -271,13 +356,26 @@ article p {
     align-items: center;
     justify-content: center;
 }
-.top img {
+
+.top .productive {
+    opacity: 0;
     width: 50%;
 }
 
+.top .productive.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInTop 1s;
+}
+
 .block-right {
+    opacity: 0;
     width: 50%;
     padding-left: 50px;
+}
+
+.block-right.animate {
+    opacity: 1;
+    animation: fadeIn 1s ease-in, slideInTop 1s;
 }
 
 .block-right h2 {
@@ -361,6 +459,33 @@ article p {
     padding: 38px 24px;
     background-color: var(--bg-color-lightblue);
     box-shadow: 4px 4px 12px var(--bg-color-lightblue);
+}
+
+.comment-1 {
+    opacity: 0;
+}
+
+.comment-2 {
+    opacity: 0;
+}
+
+.comment-3 {
+    opacity: 0;
+}
+
+.comment-1.animate {
+    animation: fadeIn 1s ease-in, slideInBottom 1s;
+    opacity: 1;
+}
+
+.comment-2.animate {
+    animation: fadeIn 1s ease-in, slideInBottom 1s;
+    opacity: 1;
+}
+
+.comment-3.animate {
+    animation: fadeIn 1s ease-in, slideInBottom 1s;
+    opacity: 1;
 }
 
 .comment p {
@@ -484,6 +609,14 @@ footer .middle {
     color: var(--text-color-white);
     font-family: var(--font-raleway);
     font-weight: 700;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+.inputs button:hover {
+    transform: scale(1.1);
+    font-size: 0.85rem;
+    background-color: #3dabb5;
 }
 
 .footer-bottom {
@@ -586,8 +719,8 @@ footer .middle {
         margin-top: 260px;
     }
     .footer-bottom {
-       margin-top:0;
-       padding: 60px;
+        margin-top: 0;
+        padding: 60px;
     }
     footer .middle {
         width: 90%;
