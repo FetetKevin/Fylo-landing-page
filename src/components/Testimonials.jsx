@@ -5,15 +5,6 @@ import profile_2 from "../assets/images/profile-2.jpg";
 import profile_3 from "../assets/images/profile-3.jpg";
 
 export default function Testimonials(props) {
-    // className={
-    //     (props.windowHeight >= 1326 && props.windowWidth > 810) ||
-    //     (props.windowHeight >= 1326 &&
-    //         props.windowWidth <= 810 &&
-    //         props.windowWidth > 450) ||
-    //     (props.windowHeight >= 1555 && props.windowWidth <= 450)
-    //         ? "animate"
-    //         : ""
-    // }
     return (
         <section className="testimonials">
             <div className="top">
@@ -24,7 +15,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 1400 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1495 && props.windowWidth <= 450)
+                        (props.windowHeight >= 1734 && props.windowWidth <= 450)
                             ? "productive animate"
                             : "productive"
                     }
@@ -38,7 +29,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 1703 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1877 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2100 && props.windowWidth <= 450)
                             ? "block-right animate"
                             : "block-right"
                     }
@@ -68,7 +59,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 2063 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2221 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2485 && props.windowWidth <= 450)
                             ? "comment comment-1 animate"
                             : "comment comment-1"
                     }
@@ -93,7 +84,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 2303 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2443 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2716 && props.windowWidth <= 450)
                             ? "comment comment-2 animate"
                             : "comment comment-2"
                     }
@@ -118,7 +109,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 2535 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2678 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2965 && props.windowWidth <= 450)
                             ? "comment comment-3 animate"
                             : "comment comment-3"
                     }

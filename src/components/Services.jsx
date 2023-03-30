@@ -12,7 +12,7 @@ export default function Services(props) {
                     (props.windowHeight >= 590 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 204 && props.windowWidth <= 450)
+                    (props.windowHeight >= 335 && props.windowWidth <= 450)
                         ? "article-1 animate"
                         : "article-1"
                 }
@@ -31,7 +31,7 @@ export default function Services(props) {
                     (props.windowHeight >= 590 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 537 && props.windowWidth <= 450)
+                    (props.windowHeight >= 674 && props.windowWidth <= 450)
                         ? "article-2 animate"
                         : "article-2"
                 }
@@ -51,7 +51,7 @@ export default function Services(props) {
                     (props.windowHeight >= 947 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 860 && props.windowWidth <= 450)
+                    (props.windowHeight >= 1005 && props.windowWidth <= 450)
                         ? "article-3 animate"
                         : "article-3"
                 }
@@ -71,7 +71,7 @@ export default function Services(props) {
                     (props.windowHeight >= 947 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 1193 && props.windowWidth <= 450)
+                    (props.windowHeight >= 1358 && props.windowWidth <= 450)
                         ? "article-4 animate"
                         : "article-4"
                 }

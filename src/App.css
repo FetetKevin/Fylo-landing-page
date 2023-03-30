@@ -430,6 +430,9 @@ article p {
 }
 
 @media screen and (max-width: 450px) {
+    .top .productive {
+        width: 80%;
+    }
     .block-right {
         width: 90%;
     }
