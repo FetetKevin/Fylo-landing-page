@@ -12,7 +12,7 @@ export default function Services(props) {
                     (props.windowHeight >= 590 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 335 && props.windowWidth <= 450)
+                    (props.windowHeight >= 408 && props.windowWidth <= 450)
                         ? "article-1 animate"
                         : "article-1"
                 }
