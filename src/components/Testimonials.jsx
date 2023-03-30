@@ -19,12 +19,12 @@ export default function Testimonials(props) {
             <div className="top">
                 <img
                     className={
-                        (props.windowHeight >= 1252 &&
+                        (props.windowHeight >= 1537 &&
                             props.windowWidth > 810) ||
-                        (props.windowHeight >= 1368 &&
+                        (props.windowHeight >= 1400 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1555 && props.windowWidth <= 450)
+                        (props.windowHeight >= 1495 && props.windowWidth <= 450)
                             ? "productive animate"
                             : "productive"
                     }
@@ -33,12 +33,12 @@ export default function Testimonials(props) {
                 />
                 <div
                     className={
-                        (props.windowHeight >= 1252 &&
+                        (props.windowHeight >= 1537 &&
                             props.windowWidth > 810) ||
-                        (props.windowHeight >= 1632 &&
+                        (props.windowHeight >= 1703 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1776 && props.windowWidth <= 450)
+                        (props.windowHeight >= 1877 && props.windowWidth <= 450)
                             ? "block-right animate"
                             : "block-right"
                     }

@@ -8,11 +8,11 @@ export default function Services(props) {
         <section className="services">
             <article
                 className={
-                    (props.windowHeight >= 280 && props.windowWidth > 810) ||
-                    (props.windowHeight >= 357 &&
+                    (props.windowHeight >= 497 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 590 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 200 && props.windowWidth <= 450)
+                    (props.windowHeight >= 204 && props.windowWidth <= 450)
                         ? "article-1 animate"
                         : "article-1"
                 }
@@ -27,11 +27,11 @@ export default function Services(props) {
 
             <article
                 className={
-                    (props.windowHeight >= 280 && props.windowWidth > 810) ||
-                    (props.windowHeight >= 357 &&
+                    (props.windowHeight >= 497 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 590 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 527 && props.windowWidth <= 450)
+                    (props.windowHeight >= 537 && props.windowWidth <= 450)
                         ? "article-2 animate"
                         : "article-2"
                 }
@@ -47,11 +47,11 @@ export default function Services(props) {
 
             <article
                 className={
-                    (props.windowHeight >= 634 && props.windowWidth > 810) ||
-                    (props.windowHeight >= 714 &&
+                    (props.windowHeight >= 846 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 947 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 855 && props.windowWidth <= 450)
+                    (props.windowHeight >= 860 && props.windowWidth <= 450)
                         ? "article-3 animate"
                         : "article-3"
                 }
@@ -67,11 +67,11 @@ export default function Services(props) {
 
             <article
                 className={
-                    (props.windowHeight >= 634 && props.windowWidth > 810) ||
-                    (props.windowHeight >= 714 &&
+                    (props.windowHeight >= 846 && props.windowWidth > 810) ||
+                    (props.windowHeight >= 947 &&
                         props.windowWidth <= 810 &&
                         props.windowWidth > 450) ||
-                    (props.windowHeight >= 1189 && props.windowWidth <= 450)
+                    (props.windowHeight >= 1193 && props.windowWidth <= 450)
                         ? "article-4 animate"
                         : "article-4"
                 }
