@@ -15,7 +15,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 1400 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1734 && props.windowWidth <= 450)
+                        (props.windowHeight >= 1771 && props.windowWidth <= 450)
                             ? "productive animate"
                             : "productive"
                     }
@@ -29,7 +29,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 1703 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2100 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2180 && props.windowWidth <= 450)
                             ? "block-right animate"
                             : "block-right"
                     }
