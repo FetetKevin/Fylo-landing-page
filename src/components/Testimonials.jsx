@@ -59,7 +59,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 2063 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2485 && props.windowWidth <= 450)
+                        (props.windowHeight >= 2600 && props.windowWidth <= 450)
                             ? "comment comment-1 animate"
                             : "comment comment-1"
                     }
@@ -84,7 +84,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 2303 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 2716 && props.windowWidth <= 450)
+                        (props.windowHeight >= 3200 && props.windowWidth <= 450)
                             ? "comment comment-2 animate"
                             : "comment comment-2"
                     }
