@@ -15,7 +15,7 @@ export default function Testimonials(props) {
                         (props.windowHeight >= 1400 &&
                             props.windowWidth <= 810 &&
                             props.windowWidth > 450) ||
-                        (props.windowHeight >= 1771 && props.windowWidth <= 450)
+                        (props.windowHeight >= 1962 && props.windowWidth <= 450)
                             ? "productive animate"
                             : "productive"
                     }
