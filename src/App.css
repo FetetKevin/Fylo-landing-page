@@ -238,8 +238,7 @@ nav a {
 }
 
 .article-1.animate {
-    opacity: 1;
-    animation: fadeIn 1s ease-in, slideInLeft 1s linear;
+    animation: fadeIn 1s ease-in forwards, slideInLeft 1s linear forwards;
 }
 
 .article-2 {
